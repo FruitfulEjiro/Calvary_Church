@@ -1,0 +1,25 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+$primaty: #0e60bf;
+// $Text-Light:;
+// $Text-Dark:;
+// $Text-Blue:;
+
+$Manrope: 'Manrope', sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  list-style: none;
+  text-decoration: none;
+  background: none;
+  box-sizing: border-box;
+  font-family: $Manrope;
+  //   border:1px solid red;
+}
