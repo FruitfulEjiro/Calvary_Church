@@ -1,25 +1,25 @@
 // Bootstrap Variables
 
 $primary: #0e60bf;
-// $secondary: #9b9b9b;
+$secondary: #e8f2ff;
 // $success: #fff;
 // $info: #b2b1b1;
 // $warning: yellow;
 // $danger: red;
 // $light: #f8f9fa;
 // $dark: #1a1a1a;
-// $transparent: #000000e1;
+$transparent: #00000000;
 
 $theme-colors: (
   "primary": $primary,
-//   "secondary": $secondary,
+  "secondary": $secondary,
 //   "light": $light,
 //   "success": $success,
 //   "info": $info,
 //   "warning": $warning,
 //   "danger": $danger,
 //   "dark": $dark,
-//   "transparent": $transparent,
+  "transparent": $transparent,
 );
 
 // breakpoints
@@ -61,5 +61,9 @@ $zindex-levels: (
   6: 6,
   7: 7,
 );
+
+$link-color:                              $transparent !default;
+$link-decoration:                         none !default;
+$link-shade-percentage:                   20% !default;
 
 @import '../../node_modules/bootstrap/scss/bootstrap';

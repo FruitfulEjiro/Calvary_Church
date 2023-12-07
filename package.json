@@ -2,13 +2,13 @@
   "name": "calvary-church",
   "version": "1.0.0",
   "description": "Calvary Church",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "sass:build": "sass --no-source-map ./public/scss:./public/css",
     "sass:watch": "sass --no-source-map --watch ./public/scss:./public/css",
     "start": "nodemon app.js"
   },
-  "author": "Brad Traversy",
+  "author": "Fruitful Ejiro",
   "license": "MIT",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
