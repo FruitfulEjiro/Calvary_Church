@@ -180,6 +180,18 @@ body {
   .service-time {
     font-size: 0.8rem;
   }
+  .teaching {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+  }
+  .youtube {
+    grid-area: 2/1/3/3;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -305,6 +317,23 @@ body {
   .copyright {
     font-size: 1rem;
     margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .teaching {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .wednesday-teaching,
+  .sunday-teaching {
+     height:90%;
+  }
+  .youtube {
+    grid-area: 1/3/2/4;
+    width: 100%;
+    height: 90%;
   }
 }
 .showDropdown {
