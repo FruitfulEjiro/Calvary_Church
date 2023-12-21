@@ -1,5 +1,3 @@
-/** @format */
-
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;600;700;800&display=swap");
 
 $primary: #0e60bf;
@@ -72,41 +70,6 @@ body {
   font-weight: 900 !important;
   color: black;
 }
-.ministry-nav {
-  width: 100%;
-}
-.nav-container {
-  width: 61rem;
-}
-.children-ministry,
-.women-ministry {
-  width: 14rem;
-  font-size: 0.9rem;
-  background: #e8f2ff;
-  padding: 0.8rem 1rem 0.8rem 1rem;
-  box-shadow: 1px 1px 2px #00000042;
-}
-.men-ministry,
-.youth-ministry {
-  width: 12rem;
-  font-size: 0.9rem;
-  background: #e8f2ff;
-  padding: 0.8rem 1rem 0.8rem 1rem;
-  box-shadow: 1px 1px 2px #00000042;
-}
-.men-ministry:hover,
-.women-ministry:hover,
-.youth-ministry:hover,
-.children-ministry:hover {
-  background: #c6deff;
-  color: $primary !important;
-}
-.ministry-img {
-  width: 80%;
-}
-.text {
-  font-size: 0.9rem;
-}
 .footer {
   width: 100%;
   height: auto;
@@ -148,9 +111,6 @@ body {
   }
   .ministry-img {
     width: 50%;
-  }
-  .text {
-    font-size: 1rem;
   }
 }
 
@@ -260,16 +220,6 @@ body {
     height: 320px;
   }
 }
-// ministry
-.hidden {
-  display: none !important;
-}
-.active {
-  background: $primary;
-  color: #fff !important;
-}
-
-// general
 .showDropdown {
   height: auto;
 }

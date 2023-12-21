@@ -19,5 +19,17 @@ app.get("/ministry", (req, res) => {
   res.render("ministry");
 });
 
+app.get("/schedule", (req, res) => {
+  res.render("schedule");
+});
+
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+
 app.listen(PORT);
 console.log(`Server is listening of port ${PORT}`);
