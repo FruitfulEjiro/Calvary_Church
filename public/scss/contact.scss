@@ -1,3 +1,5 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;600;700;800&display=swap");
 
 $primary: #0e60bf;
@@ -70,6 +72,60 @@ body {
   font-weight: 900 !important;
   color: black;
 }
+.contact-container {
+  height: 100%;
+}
+.address-wrapper,
+.contact-wrapper {
+  height: 100%;
+  border: 2px solid #c6deff;
+  border-radius: 1rem;
+  box-shadow: #0000000f 0px 8px 16px 0px;
+}
+.address-header {
+  font-size: 1.3rem;
+}
+.address-text {
+  display: inline-block;
+  background: #c6deff;
+  border-radius: 0.7rem;
+  font-size: 0.9rem;
+}
+.contact-header {
+  font-size: 1.3rem;
+}
+.contact-svg {
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.contact-text {
+  font-size: 0.9rem;
+}
+.firstname,
+.lastname,
+.email {
+  width: 100%;
+  height: 3.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #00000021;
+  border-radius: 0.5rem;
+  margin: 0.9rem 0rem 0.9rem 0rem;
+  padding: 1rem;
+}
+.message {
+  width: 100%;
+  height: 10rem;
+  font-size: 0.9rem;
+  border: 1px solid #00000021;
+  border-radius: 0.5rem;
+  margin: 0.9rem 0rem 0.9rem 0rem;
+  padding: 1rem;
+}
+.submit-button {
+  width: 100%;
+  height: 3.5rem;
+  font-size: 0.9rem;
+  margin: 0.9rem 0rem 0.9rem 0rem;
+}
 .footer {
   width: 100%;
   height: auto;
@@ -87,6 +143,19 @@ body {
   }
   .x-mark {
     left: 11rem;
+  }
+  .address-text {
+    font-size: 1rem;
+  }
+  .contact-text {
+    font-size: 1rem;
+  }
+  .firstname,
+  .lastname,
+  .email,
+  .message,
+  .submit-button {
+    font-size: 1rem;
   }
 }
 
@@ -109,12 +178,12 @@ body {
   .x-mark {
     left: 17rem;
   }
-  .ministry-img {
-    width: 50%;
-  }
 }
 
 @media screen and (min-width: 768px) {
+  .address-wrapper {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -175,10 +244,30 @@ body {
     background-size: auto;
   }
   .hero-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-  .ministry-header {
-    font-size: 1.5rem;
+  .contact-container {
+    height: 700px;
+  }
+  .address-wrapper {
+    height: 100%;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1rem;
+  }
+  .email {
+    grid-area: 2/1/3/3;
+  }
+  .message {
+    grid-area: 3/1/4/3;
+  }
+  .submit-button {
+    grid-area: 4/1/5/3;
   }
   .footer-container {
     display: grid !important;
@@ -204,7 +293,13 @@ body {
 
 @media screen and (min-width: 1024px) {
   .hero-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+  .address-wrapper {
+    width: 350px;
+  }
+  .contact-wrapper {
+    width: 450px;
   }
   .footer-logo,
   .address,
@@ -212,6 +307,15 @@ body {
   .copyright {
     font-size: 1rem;
     margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .address-wrapper {
+    width: 450px;
+  }
+  .contact-wrapper {
+    width: 550px;
   }
 }
 

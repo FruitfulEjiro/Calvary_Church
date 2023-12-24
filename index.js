@@ -19,6 +19,10 @@ app.get("/ministry", (req, res) => {
   res.render("ministry");
 });
 
+app.get("/resources", (req, res) => {
+  res.render("resources");
+});
+
 app.get("/schedule", (req, res) => {
   res.render("schedule");
 });

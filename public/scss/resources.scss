@@ -1,3 +1,5 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;600;700;800&display=swap");
 
 $primary: #0e60bf;
@@ -109,9 +111,6 @@ body {
   .x-mark {
     left: 17rem;
   }
-  .ministry-img {
-    width: 50%;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -177,9 +176,6 @@ body {
   .hero-text {
     font-size: 2.5rem;
   }
-  .ministry-header {
-    font-size: 1.5rem;
-  }
   .footer-container {
     display: grid !important;
     grid-template-columns: 0.6fr 1fr 1fr 0.65fr 0.4fr;
@@ -212,6 +208,12 @@ body {
   .copyright {
     font-size: 1rem;
     margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .address-wrapper {
+    width: 450px;
   }
 }
 
