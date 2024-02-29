@@ -60,7 +60,7 @@ body {
   width: 100%;
   height: 30vh;
   background: linear-gradient(#0e61bf74, #0e61bf74),
-    url(../images/home.png) fixed;
+    url(../images/about.png) fixed;
   background-position: bottom;
   background-size: 100% 100%;
 }
@@ -71,6 +71,58 @@ body {
 .hero-text {
   font-weight: 900 !important;
   color: black;
+}
+.about-nav {
+  width: 100%;
+}
+.nav-container {
+  width: 45rem;
+}
+.statement {
+  width: 14rem;
+  font-size: 0.9rem;
+  background: #e8f2ff;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  box-shadow: 1px 1px 2px #00000042;
+}
+.history-of-cct,
+.leadership {
+  width: 12rem;
+  font-size: 0.9rem;
+  background: #e8f2ff;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  box-shadow: 1px 1px 2px #00000042;
+}
+.history-of-cct:hover,
+.statement:hover,
+.leadership:hover {
+  background: #c6deff;
+  color: $primary !important;
+}
+.about-us-img,
+.history-img {
+  width: 100%;
+}
+.brief {
+  background: linear-gradient(#0e61bf69, #0e60bf69), url(../images/about-1.png);
+}
+.brief-heading {
+  font-size: 0.9rem;
+}
+.statement-section {
+  background: linear-gradient(#052f61bf, #052f61bf),
+    url(../images/chapel-history.jpg);
+}
+.bible,
+.God,
+.Jesus,
+.holy-spirit,
+.man-sin,
+.salvation,
+.church,
+.end-times {
+  background: #fff;
+  border-radius: 1rem;
 }
 .footer {
   width: 100%;
@@ -96,6 +148,10 @@ body {
   .x-mark {
     left: 13.5rem;
   }
+  .about-us-img,
+  .history-img {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 475px) {
@@ -113,6 +169,10 @@ body {
   }
   .ministry-img {
     width: 50%;
+  }
+  .about-us-img,
+  .history-img {
+    width: 80%;
   }
 }
 
@@ -172,15 +232,16 @@ body {
     width: 100%;
     height: 40vh;
     background: linear-gradient(#0e61bf74, #0e61bf74),
-      url(../images/home.png) fixed;
+      url(../images/about.png) fixed;
     background-position: top;
     background-size: auto;
   }
   .hero-text {
     font-size: 2.5rem;
   }
-  .ministry-header {
-    font-size: 1.5rem;
+  .about-us-img,
+  .history-img {
+    width: 50%;
   }
   .footer-container {
     display: grid !important;
@@ -224,4 +285,18 @@ body {
 }
 .showDropdown {
   height: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+.active {
+  background: $primary;
+  color: #fff !important;
+}
+.nav-hover-color {
+  color: $primary !important;
+}
+.min-nav-color {
+  color: #fff !important;
 }

@@ -72,6 +72,129 @@ body {
   font-weight: 900 !important;
   color: black;
 }
+.hero-input {
+  width: 80vw;
+  height: 2.5rem;
+  font-size: 0.9rem;
+  border: 1px solid $primary;
+  background: $secondary;
+  border-radius: 0.5rem;
+}
+.resources-nav {
+  width: 100%;
+}
+.nav-container {
+  width: 61rem;
+}
+.wednesday-services,
+.character-studies {
+  width: 14rem;
+  font-size: 0.9rem;
+  background: #e8f2ff;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  box-shadow: 1px 1px 2px #00000042;
+}
+.verse-by-verse,
+.sunday-services,
+.guest-speakers,
+.topical-studies,
+.conferences {
+  width: 12rem;
+  font-size: 0.9rem;
+  background: #e8f2ff;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  box-shadow: 1px 1px 2px #00000042;
+}
+.verse-by-verse:hover,
+.sunday-services:hover,
+.guest-speakers:hover,
+.topical-studies:hover,
+.wednesday-services:hover,
+.character-studies:hover,
+.conferences:hover {
+  background: #c6deff;
+  color: $primary !important;
+}
+.old-testament,
+.new-testament {
+  border: 2px solid $secondary;
+  border-radius: 1rem;
+}
+.OT-heading,
+.NT-heading,
+.genesis,
+.exodus,
+.leviticus,
+.numbers,
+.joshua,
+.deuteronomy,
+.judges,
+.ruth,
+.samuel1,
+.samuel2,
+.kings1,
+.kings2,
+.chronicles1,
+.chronicles2,
+.ezra,
+.nehemiah,
+.esther,
+.job,
+.psalm,
+.proverbs,
+.ecclesiastes,
+.song-of-solomon,
+.isaiah,
+.jeremiah,
+.lamentations,
+.ezekiel,
+.daniel,
+.hosea,
+.joel,
+.amos,
+.obadiah,
+.jonah,
+.micah,
+.nahum,
+.habakkuk,
+.zepheniah,
+.haggai,
+.zechariah,
+.malachi,
+.matthew,
+.mark1,
+.luke,
+.john,
+.acts,
+.roman,
+.corinthians1,
+.corinthians2,
+.galatians,
+.ephesians,
+.phillipians,
+.colossians,
+.thessalonians1,
+.thessalonians2,
+.timothy1,
+.timothy2,
+.titus,
+.philemon,
+.nehemiah,
+.hebrews,
+.james,
+.peter1,
+.peter2,
+.john1,
+.john2,
+.john3,
+.jude,
+.revelation {
+  width: 100%;
+  border-bottom: 1px solid $secondary;
+}
+.dummy-text {
+  font-size: 1rem;
+}
 .footer {
   width: 100%;
   height: auto;
@@ -111,9 +234,17 @@ body {
   .x-mark {
     left: 17rem;
   }
+  .hero-input {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .hero-input {
+    width: 30rem;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -176,6 +307,9 @@ body {
   .hero-text {
     font-size: 2.5rem;
   }
+  .hero-input {
+    width: 40rem;
+  }
   .footer-container {
     display: grid !important;
     grid-template-columns: 0.6fr 1fr 1fr 0.65fr 0.4fr;
@@ -224,4 +358,18 @@ body {
 }
 .showDropdown {
   height: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+.active {
+  background: $primary;
+  color: #fff !important;
+}
+.nav-hover-color {
+  color: $primary !important;
+}
+.min-nav-color {
+  color: #fff !important;
 }

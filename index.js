@@ -2,7 +2,6 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
-
 const PORT = 8080;
 const app = express();
 
@@ -16,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/ministry", (req, res) => {
-  res.render("ministry");
+     res.render("ministry");
 });
 
 app.get("/resources", (req, res) => {
