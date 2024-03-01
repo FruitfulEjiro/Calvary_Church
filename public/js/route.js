@@ -941,6 +941,171 @@ const statementSection = () => {
      `;
 };
 
+const leadershipSection = () => {
+  const ministryNav = navContainer.querySelectorAll(".color");
+  const svg = navContainer.querySelectorAll("svg g");
+  leadership.classList.add("active");
+  ministryNav[0].classList.add("min-nav-color");
+  svg.fill = "#fff";
+  const div = document.querySelector(".about-container");
+  div.innerHTML = `
+     <div
+          class="leadership-section container d-flex flex-column align-items-center justify-content-center gap-4">
+          <div
+            class="robert-profile container w-100 d-lg-flex flex-row align-items-center justify-content-center gap-3 py-3">
+            <img src="./images/robert.png" alt="" class="profile-img" />
+            <div class="profile-write-up">
+              <div
+                class="name-title d-flex flex-row align-items-center justify-content-start gap-3 p-2">
+                <p class="profile-name m-0">Robert Pecoraro</p>
+                <p class="title badge text-primary m-0">Pastor</p>
+              </div>
+              <div
+                class="mail d-flex flex-row align-items-center justify-content-start gap-3 p-2 mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 25 17"
+                  style="margin-right: 10px; height: 20px; width: 40px">
+                  <path
+                    fill="#0E60BF"
+                    d="M24.552 16.203a.424.424 0 0 0 .022-.13V.926a.42.42 0 0 0-.023-.131l-.005-.017a.423.423 0 0 0-.079-.132L24.462.64l-.004-.003a.429.429 0 0 0-.126-.092l-.01-.006a.421.421 0 0 0-.146-.035L24.161.5 24.147.5H.427L.415.501.4.503a.427.427 0 0 0-.148.035L.244.543a.423.423 0 0 0-.127.093L.112.639.107.647A.427.427 0 0 0 .028.78L.023.796A.42.42 0 0 0 0 .928v15.145c0 .046.01.09.023.133l.006.017a.428.428 0 0 0 .08.132l.004.007.006.005c.014.015.03.027.045.04l.021.017c.019.013.04.024.06.034l.015.008a.427.427 0 0 0 .168.034h23.718c.06 0 .117-.012.168-.035.008-.003.016-.008.023-.012a.441.441 0 0 0 .052-.03c.009-.005.016-.013.024-.02a.382.382 0 0 0 .042-.036l.007-.006.005-.009a.425.425 0 0 0 .078-.13l.007-.019ZM.855 1.897l7.198 6.574-7.198 6.627v-13.2ZM15.607 8.15c-.03.02-.061.036-.086.063-.01.01-.013.024-.021.034l-3.213 2.935L1.53 1.355h21.514l-7.437 6.794Zm-6.92.901 3.312 3.025a.426.426 0 0 0 .576 0l3.272-2.987 7.196 6.557H1.523L8.688 9.05Zm7.794-.542 7.238-6.61v13.206l-7.238-6.596Z"></path>
+                </svg>
+                <p class="mail m-0">robertpecoraro@calvarychapel.fi</p>
+              </div>
+              <p class="about-badge badge fw-bold p-2 rounded-pill">about me</p>
+              <p class="profile-text">
+                Lorem ipsum dolor sit amet consectetur. Arcu dictum sapien amet
+                et tristique vitae gravida sed imperdiet. Arcu porta porttitor
+                sit fringilla. Nisi arcu ac rhoncus viverra vitae sed aliquam
+                porta. Etiam imperdiet est ac volutpat mauris. Tellus amet
+                scelerisque erat posuere amet tincidunt. Augue morbi et magna
+                tellus. Convallis in luctus pulvinar velit. In aliquet in
+                sodales curabitur. Sapien egestas quam euismod augue. Consequat
+                felis morbi nibh eu at diam. Nam pellentesque integer amet nisi.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="kyle-profile container w-100 d-lg-flex flex-row align-items-center justify-content-center gap-3 py-3">
+            <img src="./images/kyle.png" alt="" class="profile-img" />
+            <div class="profile-write-up">
+              <div
+                class="name-title d-flex flex-row align-items-center justify-content-start gap-3 p-2">
+                <p class="profile-name m-0">Kyle Bentz</p>
+                <p class="title badge text-primary m-0">Elder</p>
+              </div>
+              <div
+                class="mail d-flex flex-row align-items-center justify-content-start gap-3 p-2 mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 25 17"
+                  style="margin-right: 10px; height: 20px; width: 40px">
+                  <path
+                    fill="#0E60BF"
+                    d="M24.552 16.203a.424.424 0 0 0 .022-.13V.926a.42.42 0 0 0-.023-.131l-.005-.017a.423.423 0 0 0-.079-.132L24.462.64l-.004-.003a.429.429 0 0 0-.126-.092l-.01-.006a.421.421 0 0 0-.146-.035L24.161.5 24.147.5H.427L.415.501.4.503a.427.427 0 0 0-.148.035L.244.543a.423.423 0 0 0-.127.093L.112.639.107.647A.427.427 0 0 0 .028.78L.023.796A.42.42 0 0 0 0 .928v15.145c0 .046.01.09.023.133l.006.017a.428.428 0 0 0 .08.132l.004.007.006.005c.014.015.03.027.045.04l.021.017c.019.013.04.024.06.034l.015.008a.427.427 0 0 0 .168.034h23.718c.06 0 .117-.012.168-.035.008-.003.016-.008.023-.012a.441.441 0 0 0 .052-.03c.009-.005.016-.013.024-.02a.382.382 0 0 0 .042-.036l.007-.006.005-.009a.425.425 0 0 0 .078-.13l.007-.019ZM.855 1.897l7.198 6.574-7.198 6.627v-13.2ZM15.607 8.15c-.03.02-.061.036-.086.063-.01.01-.013.024-.021.034l-3.213 2.935L1.53 1.355h21.514l-7.437 6.794Zm-6.92.901 3.312 3.025a.426.426 0 0 0 .576 0l3.272-2.987 7.196 6.557H1.523L8.688 9.05Zm7.794-.542 7.238-6.61v13.206l-7.238-6.596Z"></path>
+                </svg>
+                <p class="mail m-0">kylebentz@calvarychapel.fi</p>
+              </div>
+              <p class="about-badge badge fw-bold p-2 rounded-pill">about me</p>
+              <p class="profile-text">
+                Lorem ipsum dolor sit amet consectetur. Arcu dictum sapien amet
+                et tristique vitae gravida sed imperdiet. Arcu porta porttitor
+                sit fringilla. Nisi arcu ac rhoncus viverra vitae sed aliquam
+                porta. Etiam imperdiet est ac volutpat mauris. Tellus amet
+                scelerisque erat posuere amet tincidunt. Augue morbi et magna
+                tellus. Convallis in luctus pulvinar velit. In aliquet in
+                sodales curabitur. Sapien egestas quam euismod augue. Consequat
+                felis morbi nibh eu at diam. Nam pellentesque integer amet nisi.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="jaakko-profile container w-100 d-lg-flex flex-row align-items-center justify-content-center gap-3 py-3">
+            <img src="./images/jaako.png" alt="" class="profile-img" />
+            <div class="profile-write-up">
+              <div
+                class="name-title d-flex flex-row align-items-center justify-content-start gap-3 p-2">
+                <p class="profile-name m-0">Jaakko Haapanen</p>
+                <p class="title badge text-primary m-0">Elder</p>
+              </div>
+              <div
+                class="mail d-flex flex-row align-items-center justify-content-start gap-3 p-2 mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 25 17"
+                  style="margin-right: 10px; height: 20px; width: 40px">
+                  <path
+                    fill="#0E60BF"
+                    d="M24.552 16.203a.424.424 0 0 0 .022-.13V.926a.42.42 0 0 0-.023-.131l-.005-.017a.423.423 0 0 0-.079-.132L24.462.64l-.004-.003a.429.429 0 0 0-.126-.092l-.01-.006a.421.421 0 0 0-.146-.035L24.161.5 24.147.5H.427L.415.501.4.503a.427.427 0 0 0-.148.035L.244.543a.423.423 0 0 0-.127.093L.112.639.107.647A.427.427 0 0 0 .028.78L.023.796A.42.42 0 0 0 0 .928v15.145c0 .046.01.09.023.133l.006.017a.428.428 0 0 0 .08.132l.004.007.006.005c.014.015.03.027.045.04l.021.017c.019.013.04.024.06.034l.015.008a.427.427 0 0 0 .168.034h23.718c.06 0 .117-.012.168-.035.008-.003.016-.008.023-.012a.441.441 0 0 0 .052-.03c.009-.005.016-.013.024-.02a.382.382 0 0 0 .042-.036l.007-.006.005-.009a.425.425 0 0 0 .078-.13l.007-.019ZM.855 1.897l7.198 6.574-7.198 6.627v-13.2ZM15.607 8.15c-.03.02-.061.036-.086.063-.01.01-.013.024-.021.034l-3.213 2.935L1.53 1.355h21.514l-7.437 6.794Zm-6.92.901 3.312 3.025a.426.426 0 0 0 .576 0l3.272-2.987 7.196 6.557H1.523L8.688 9.05Zm7.794-.542 7.238-6.61v13.206l-7.238-6.596Z"></path>
+                </svg>
+                <p class="mail m-0">JaakkoHaapanen@calvarychapel.fi</p>
+              </div>
+              <p class="about-badge badge fw-bold p-2 rounded-pill">about me</p>
+              <p class="profile-text">
+                Lorem ipsum dolor sit amet consectetur. Arcu dictum sapien amet
+                et tristique vitae gravida sed imperdiet. Arcu porta porttitor
+                sit fringilla. Nisi arcu ac rhoncus viverra vitae sed aliquam
+                porta. Etiam imperdiet est ac volutpat mauris. Tellus amet
+                scelerisque erat posuere amet tincidunt. Augue morbi et magna
+                tellus. Convallis in luctus pulvinar velit. In aliquet in
+                sodales curabitur. Sapien egestas quam euismod augue. Consequat
+                felis morbi nibh eu at diam. Nam pellentesque integer amet nisi.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="olli-profile container w-100 d-lg-flex flex-row align-items-center justify-content-center gap-3 py-3">
+            <img src="./images/olli.png" alt="" class="profile-img" />
+            <div class="profile-write-up">
+              <div
+                class="name-title d-flex flex-row align-items-center justify-content-start gap-3 p-2">
+                <p class="profile-name m-0">Olli Förbom</p>
+                <p class="title badge text-primary m-0">Board Member</p>
+              </div>
+              <div
+                class="mail d-flex flex-row align-items-center justify-content-start gap-3 p-2 mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 25 17"
+                  style="margin-right: 10px; height: 20px; width: 40px">
+                  <path
+                    fill="#0E60BF"
+                    d="M24.552 16.203a.424.424 0 0 0 .022-.13V.926a.42.42 0 0 0-.023-.131l-.005-.017a.423.423 0 0 0-.079-.132L24.462.64l-.004-.003a.429.429 0 0 0-.126-.092l-.01-.006a.421.421 0 0 0-.146-.035L24.161.5 24.147.5H.427L.415.501.4.503a.427.427 0 0 0-.148.035L.244.543a.423.423 0 0 0-.127.093L.112.639.107.647A.427.427 0 0 0 .028.78L.023.796A.42.42 0 0 0 0 .928v15.145c0 .046.01.09.023.133l.006.017a.428.428 0 0 0 .08.132l.004.007.006.005c.014.015.03.027.045.04l.021.017c.019.013.04.024.06.034l.015.008a.427.427 0 0 0 .168.034h23.718c.06 0 .117-.012.168-.035.008-.003.016-.008.023-.012a.441.441 0 0 0 .052-.03c.009-.005.016-.013.024-.02a.382.382 0 0 0 .042-.036l.007-.006.005-.009a.425.425 0 0 0 .078-.13l.007-.019ZM.855 1.897l7.198 6.574-7.198 6.627v-13.2ZM15.607 8.15c-.03.02-.061.036-.086.063-.01.01-.013.024-.021.034l-3.213 2.935L1.53 1.355h21.514l-7.437 6.794Zm-6.92.901 3.312 3.025a.426.426 0 0 0 .576 0l3.272-2.987 7.196 6.557H1.523L8.688 9.05Zm7.794-.542 7.238-6.61v13.206l-7.238-6.596Z"></path>
+                </svg>
+                <p class="mail m-0">robertpecoraro@calvarychapel.fi</p>
+              </div>
+              <p class="about-badge badge fw-bold p-2 rounded-pill">about me</p>
+              <p class="profile-text">
+                Lorem ipsum dolor sit amet consectetur. Arcu dictum sapien amet
+                et tristique vitae gravida sed imperdiet. Arcu porta porttitor
+                sit fringilla. Nisi arcu ac rhoncus viverra vitae sed aliquam
+                porta. Etiam imperdiet est ac volutpat mauris. Tellus amet
+                scelerisque erat posuere amet tincidunt. Augue morbi et magna
+                tellus. Convallis in luctus pulvinar velit. In aliquet in
+                sodales curabitur. Sapien egestas quam euismod augue. Consequat
+                felis morbi nibh eu at diam. Nam pellentesque integer amet nisi.
+              </p>
+            </div>
+          </div>
+        </div>
+     `;
+};
+
 function init() {
   switch (`${window.location.pathname}${window.location.search}`) {
     case "/ministry":
@@ -996,6 +1161,10 @@ function init() {
       break;
     case "/about?view=statement":
       statementSection();
+      item4.classList.add("nav-hover-color");
+      break;
+    case "/about?view=leadership":
+      leadershipSection();
       item4.classList.add("nav-hover-color");
       break;
     case "/schedule":
