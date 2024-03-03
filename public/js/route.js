@@ -1,4 +1,5 @@
 /** @format */
+
 // NAVIGATION BAR
 
 const item1 = document.querySelector(".item1");
@@ -1106,6 +1107,8 @@ const leadershipSection = () => {
      `;
 };
 
+// SCHEDULE PAGE
+
 function init() {
   switch (`${window.location.pathname}${window.location.search}`) {
     case "/ministry":
@@ -1169,6 +1172,10 @@ function init() {
       break;
     case "/schedule":
       item3.classList.add("nav-hover-color");
+      eventText.innerHTML = `No available upcoming schedules for this date`;
+      upcoming.style.borderBottom = "3px solid #0e60bf";
+      concluded.style.border = "none";
+      upcoming.style.color = "#0e60bf";
       break;
     case "/contact":
       item5.classList.add("nav-hover-color");

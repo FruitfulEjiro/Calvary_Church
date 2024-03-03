@@ -1,3 +1,5 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;600;700;800&display=swap");
 
 $primary: #0e60bf;
@@ -21,6 +23,8 @@ html {
 }
 body {
   overflow-x: hidden;
+  position:relative;
+  padding:0rem 0rem 4rem 0rem;
 }
 .header {
   height: 3rem;
@@ -70,10 +74,42 @@ body {
   font-weight: 900 !important;
   color: black;
 }
+.schedule-container {
+  border: 2px solid #c6deff;
+  border-radius: 1rem;
+  box-shadow: #0000000f 0px 8px 16px 0px;
+}
+.calendar {
+  border-bottom: 1px solid #c6deff;
+}
+.schedule-type {
+  border-bottom: 1px solid #000;
+}
+.left-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #c6deff;
+  margin: 0rem 1rem 0rem 0rem;
+}
+.right-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #c6deff;
+  margin: 0rem 0rem 0rem 1rem;
+}
+.upcoming:hover,
+.concluded:hover {
+  background: #c6deff;
+  cursor: default;
+}
 .footer {
   width: 100%;
   height: auto;
   background: #0b2645;
+  position: absolute;
+  bottom: 0px;
 }
 .footer-container {
   width: 100%;
@@ -112,9 +148,20 @@ body {
   .ministry-img {
     width: 50%;
   }
+  .upcoming,
+  .concluded {
+    height: 4rem;
+  }
+  .upcoming br,
+  .concluded br {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .schedule-container {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -180,6 +227,9 @@ body {
   .ministry-header {
     font-size: 1.5rem;
   }
+  .schedule-container {
+    width: 70%;
+  }
   .footer-container {
     display: grid !important;
     grid-template-columns: 0.6fr 1fr 1fr 0.65fr 0.4fr;
@@ -205,6 +255,9 @@ body {
 @media screen and (min-width: 1024px) {
   .hero-text {
     font-size: 3rem;
+  }
+  .schedule-container {
+    width: 60%;
   }
   .footer-logo,
   .address,

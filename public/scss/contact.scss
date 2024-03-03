@@ -23,6 +23,8 @@ html {
 }
 body {
   overflow-x: hidden;
+  position:relative;
+  padding:0rem 0rem 4rem 0rem;
 }
 .header {
   height: 3rem;
@@ -130,6 +132,8 @@ body {
   width: 100%;
   height: auto;
   background: #0b2645;
+  position: absolute;
+  bottom: 0px;
 }
 .footer-container {
   width: 100%;
